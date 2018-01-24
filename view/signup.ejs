@@ -1,0 +1,42 @@
+<% include header %>
+
+<div class="container">
+  <div class="ui form segment" style="width:400px;margin:40px auto">
+    <form method="post">
+      <div class="two fields">
+        <div class="field required">
+          <label>姓名</label>
+          <input placeholder="姓名" type="text" name="name">
+        </div>
+        <div class="field required">
+          <label>角色</label>
+          <div class="ui selection dropdown">
+            <div class="default text">选择角色</div>
+            <i class="dropdown icon"></i>
+            <input type="hidden" name="role">
+            <div class="menu">
+              <div class="item" data-value="城市合伙人">城市合伙人</div>
+              <div class="item" data-value="员工">员工</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="field required">
+        <label>游戏号</label>
+        <input placeholder="游戏号" type="number" name="game_number">
+      </div>
+      <div class="field required">
+        <label>桌号</label>
+        <input placeholder="桌号" type="number" name="table_number">
+      </div>
+      <input type="submit" class="ui button fluid" value="注册">
+    </form>
+  </div>
+</div>
+
+<script type="text/javascript">
+  $('.ui.dropdown').dropdown();
+</script>
+
+<% include footer %>

@@ -1,0 +1,8 @@
+<% include header %>
+  <% if (userlist) { %>
+        <% userlist.forEach(function (user, index) { %>
+          <h2><%= user.name %></h2>
+          <img src="<%= user.picture %>" alt=""/>
+        <%  }); %>
+  <% } %>
+<% include footer %>

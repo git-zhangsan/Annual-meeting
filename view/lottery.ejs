@@ -1,0 +1,8 @@
+<% include header %>
+  <% if (lotterylist) { %>
+        <% lotterylist.forEach(function (item, index) { %>
+          <h2><%= item.name %></h2>
+          <img src="<%= item.picture %>" alt="" width="50" height="50"/>
+        <%  }); %>
+  <% } %>
+<% include footer %>
